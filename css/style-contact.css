@@ -1,0 +1,100 @@
+.contact-us{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.contact-us .continer{
+    background-color: var(--color-bg1);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+}
+.contact-us .continer .info{
+    position: relative;
+}
+.contact-us .continer .continer-info{
+    position: absolute;
+    background-color: var(--color-primary);
+    top: 50%;
+    left: 0px;
+    padding: 20px;
+    border-radius: 15px;
+    transform: translateY(-50%);
+}
+.contact-us .continer .info img{
+    width: 150px;
+    border-radius: 20px;
+}
+.contact-us .continer .info h1{
+    margin: 20px 0px;
+}
+.contact-us .continer .info p{
+    margin-bottom: 20px;
+}
+.contact-us .continer .info div{
+    margin-bottom: 20px;
+}
+.contact-us .continer .info div span{
+    display: inline-block;
+    margin-right: 10px;
+}
+.contact-us .continer .info ul{
+    display: flex;
+}
+.contact-us .continer .info ul li{
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: var(--color-bg2);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.contact-us .continer form input , .contact-us .continer form textarea{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-bg);
+    color: white;
+}
+.contact-us .continer form input::placeholder , .contact-us .continer form textarea::placeholder{
+    color: white;
+}
+.contact-us .continer form .name{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.contact-us .continer form [name="email"]{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact-us .continer form textarea{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.contact-us .continer form [type="submit"]{
+    color: white;
+    padding: 1rem 2rem;
+    background-color: var(--color-danger);
+    cursor: pointer;
+    font-weight: bold;
+}
+@media (max-width: 767px){
+    .contact-us .continer{
+        grid-template-columns: 1fr;
+    }
+    .contact-us .continer .continer-info{
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .contact-us .continer form .name{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact-us .continer{
+        padding: 20px;
+    }
+}
